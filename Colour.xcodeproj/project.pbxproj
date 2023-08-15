@@ -8,18 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		040BBAE128D4BE9600F8E2F6 /* ColourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BBAE028D4BE9600F8E2F6 /* ColourApp.swift */; };
-		040BBAE328D4BE9600F8E2F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BBAE228D4BE9600F8E2F6 /* ContentView.swift */; };
 		040BBAE528D4BE9800F8E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040BBAE428D4BE9800F8E2F6 /* Assets.xcassets */; };
-		040BBAE828D4BE9800F8E2F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040BBAE728D4BE9800F8E2F6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040BBADD28D4BE9600F8E2F6 /* Colour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040BBADD28D4BE9600F8E2F6 /* Color Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040BBAE028D4BE9600F8E2F6 /* ColourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourApp.swift; sourceTree = "<group>"; };
-		040BBAE228D4BE9600F8E2F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		040BBAE428D4BE9800F8E2F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		040BBAE728D4BE9800F8E2F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		040BBAE928D4BE9800F8E2F6 /* Colour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Colour.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +39,7 @@
 		040BBADE28D4BE9600F8E2F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				040BBADD28D4BE9600F8E2F6 /* Colour.app */,
+				040BBADD28D4BE9600F8E2F6 /* Color Picker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,20 +48,9 @@
 			isa = PBXGroup;
 			children = (
 				040BBAE028D4BE9600F8E2F6 /* ColourApp.swift */,
-				040BBAE228D4BE9600F8E2F6 /* ContentView.swift */,
 				040BBAE428D4BE9800F8E2F6 /* Assets.xcassets */,
-				040BBAE928D4BE9800F8E2F6 /* Colour.entitlements */,
-				040BBAE628D4BE9800F8E2F6 /* Preview Content */,
 			);
 			path = Colour;
-			sourceTree = "<group>";
-		};
-		040BBAE628D4BE9800F8E2F6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				040BBAE728D4BE9800F8E2F6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +70,7 @@
 			);
 			name = Colour;
 			productName = Colour;
-			productReference = 040BBADD28D4BE9600F8E2F6 /* Colour.app */;
+			productReference = 040BBADD28D4BE9600F8E2F6 /* Color Picker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +111,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040BBAE828D4BE9800F8E2F6 /* Preview Assets.xcassets in Resources */,
 				040BBAE528D4BE9800F8E2F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +122,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040BBAE328D4BE9600F8E2F6 /* ContentView.swift in Sources */,
 				040BBAE128D4BE9600F8E2F6 /* ColourApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,13 +247,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Colour/Colour.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Colour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -279,9 +261,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackfinnis.Colour;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Color Picker";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -292,13 +275,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Colour/Colour.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Colour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -306,9 +289,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackfinnis.Colour;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Color Picker";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

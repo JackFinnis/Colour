@@ -13,5 +13,28 @@ struct ColourApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+    }
+}
+
+struct ContentView: View {
+    @State var color = Color.black
+    
+    var body: some View {
+        ZStack {
+            ColorPicker(selection: $color) {}
+                .scaleEffect(10)
+            color
+                .allowsHitTesting(false)
+        }
+        .ignoresSafeArea()
+        .frame(width: 120, height: 90)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
