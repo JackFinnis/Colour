@@ -32,9 +32,3 @@ struct ContentView: View {
         .frame(width: 120, height: 90)
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
