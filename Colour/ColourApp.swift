@@ -14,6 +14,9 @@ struct ColourApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    NSWindow.allowsAutomaticWindowTabbing = false
+                }
         }
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
