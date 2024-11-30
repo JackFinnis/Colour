@@ -17,6 +17,7 @@ struct ColourApp: App {
         }
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
+        .commandsRemoved()
     }
 }
 
